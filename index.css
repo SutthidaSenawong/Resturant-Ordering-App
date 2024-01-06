@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Smythe';
+}
+.head {
+  color: #fff;
+  padding: 50px;
+  font-weight: 400;
+  /* border: 1px solid red; */
+  background: url(burgersBG.jpeg);
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+}
+#resturant-name {
+  font-size: 39px;
+  line-height: 24px;
+}
+#hero-comment {
+  font-size: 22.422px;
+  line-height: 13.798px;
+}
+.menu-item {
+  width: 600px;
+  height: 161px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 30px auto;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #d2d2d2;
+}
+.item-info {
+  display: flex;
+}
+#emoji {
+  display: flex;
+  font-size: 78.72px;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: -1.574px;
+  opacity: 0.72;
+}
+.detail {
+  /* border: 1px solid red; */
+  margin-left: 31px;
+}
+.food-name {
+  font-size: 28px;
+  line-height: 16.8px;
+}
+#food-ingredients {
+  font-size: 16px;
+  line-height: 24px;
+}
+.price {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#add-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 24px;
+  font-family: Inter;
+  color: #3c3c3c;
+  stroke-width: 1.5px;
+  border: 1px solid #dedede;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.order-item {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-bottom: 5px;
+}
+#price {
+  margin-left: auto;
+}
+#order-head {
+  text-align: center;
+  font-size: 28px;
+}
+.order {
+  width: 600px;
+  margin: 30px auto;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #393333;
+}
+.remove-btn {
+  border: none;
+  background: none;
+  color: #bbb;
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 7px;
+  /* align-items: center; */
+}
+.total-price {
+  color: #0e0e0e;
+  font-size: 28px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  width: 600px;
+  margin: 30px auto;
+  padding-bottom: 28px;
+}
+.order-btn {
+  display: flex;
+  margin: 0px auto 53px auto;
+  width: 508px;
+  padding: 18px 175px 18px 194px;
+  border: none;
+  border-radius: 3px;
+  background: #16db99;
+  /* box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05); */
+  color: #fff;
+  font-family: Verdana;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.modal {
+  /* background: yellowgreen; */
+  display: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 524px;
+  height: 542.24px;
+  border-radius: 3.89px;
+  border: none;
+  background: #fff;
+  box-shadow: 0px 0px 100px 2px #757575;
+  color: #000;
+  font-family: Verdana;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto 50px auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 475.911px;
+  height: 71.304px;
+  color: #757575;
+  border-radius: 3.89px;
+  font-size: 20px;
+  margin: 0 auto;
+  gap: 23px;
+}
+input {
+  width: 216.129px;
+  height: 40.924px;
+  font-family: Verdana;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31.119px;
+  margin-top: 10px;
+  border: 1px solid #757575;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+}
+.modal-close-btn-container {
+  text-align: right;
+  margin: 9px;
+}
+.close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #212529;
+}
+.pay-btn {
+  width: 475.911px;
+  height: 71.304px;
+  margin-top: 50px;
+  border-radius: 3.89px;
+  background: #16db99;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31.119px;
+  border: none;
+  padding: 16px;
+}
+.thanks-message {
+  width: 504px;
+  height: 120px;
+  border-radius: 3px;
+  border: none;
+  background: #ecfdf5;
+  display: flex;
+  justify-content: center;
+  margin: 45px auto;
+}
+.thanks-message p {
+  color: #065f46;
+  font-family: 'Smythe';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 16.8px;
+  margin: auto;
+}

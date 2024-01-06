@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h1 id="resturant-name">Jimmy’s Diner</h1>
+        <p id="hero-comment">The best burgers and pizzas in town.</p>
+      </div>
+    </header>
+    <main>
+      <div class="list-menu" id="list-menu">
+        <!-- food menu is here -->
+      </div>
+    </main>
+    <!-- order summary is here -->
+    <section id="final-part">
+      <div class="order">
+        <p id="order-head">Your order</p>
+        <div id="order-summary"></div>
+      </div>
+      <div>
+        <p class="total-price">
+          Total price: <span id="total-price" class="price">$0</span>
+        </p>
+        <button class="order-btn" id="order-btn">Complete order</button>
+      </div>
+
+      <!-- Add a modal for card details -->
+      <div id="card-details-modal" class="modal">
+        <div class="modal-close-btn-container">
+          <button class="close-btn" id="close-btn">X</button>
+        </div>
+
+        <div class="modal-content">
+          <!-- Card details form -->
+          <h2>Enter card details</h2>
+          <form id="card-details-form">
+            <!-- <label for="cardName">Card Name:</label> -->
+            <input
+              type="text"
+              id="cardName"
+              name="cardName"
+              placeholder="Enter your name"
+              required
+            />
+
+            <!-- <label for="cardNumber">Card Number:</label> -->
+            <input
+              type="text"
+              id="cardNumber"
+              name="cardNumber"
+              placeholder="Enter card number"
+              required
+            />
+
+            <!-- <label for="cvv">CVV:</label> -->
+            <input
+              type="text"
+              id="cvv"
+              name="cvv"
+              placeholder="Enter CVV"
+              required
+            />
+
+            <button id="pay-btn" class="pay-btn">Pay</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
